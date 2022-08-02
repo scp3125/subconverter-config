@@ -10,6 +10,5 @@ custom:
     - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list",group: "DIRECT"}
     - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list",group: "DIRECT"}
     - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list",group: "DIRECT"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",group: "DIRECT"}
     - {ruleset: "https://raw.githubusercontent.com/scp3125/subconverter-config/main/direct-list.txt", group: "DIRECT"}
     - {ruleset: "[]FINAL", group: "Proxy"}
