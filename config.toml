@@ -1,0 +1,10 @@
+[custom]
+ruleset = [
+    "DIRECT,https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt",
+    "DIRECT,direct-list.txt",
+    "PROXY,[]FINAL",
+]
+custom_proxy_group = [
+    "PROXY`select`URLTest`[]DIRECT`.*`",
+    "URLTest`url-test`.*`https://google.com/generate_204`300,3,100",
+]
