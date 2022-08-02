@@ -1,14 +1,14 @@
-rulesets:
-  enabled: true
+custom:
+  enable_rule_generator: true
   overwrite_original_rules: true
-  update_ruleset_on_request: true
-  rulesets:
-  - {ruleset: "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt",group: "DIRECT"}
-  - {ruleset: "direct-list.txt", group: "DIRECT"}
-  - {ruleset: "[]FINAL", group: "Proxy"}
 
-
-proxy_groups:
-  custom_proxy_group:
+  proxy_groups:
     - {name: Proxy, type: select, rule: ["URLTest","DIRECT",".*"]}
     - {name: URLTest, type: url-test, rule: [".*"], url: https://google.com/generate_204, interval: 300, tolerance: 100, timeout: 3}
+
+  rulesets:
+    - {ruleset: "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt",group: "DIRECT"}
+    - {ruleset: "direct-list.txt", group: "DIRECT"}
+    - {ruleset: "[]FINAL", group: "Proxy"}
+
+
