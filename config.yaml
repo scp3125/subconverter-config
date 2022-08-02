@@ -2,11 +2,16 @@ custom:
   enable_rule_generator: true
   overwrite_original_rules: true
 
+  clash_rule_base: base/forcerule.yml
+
   proxy_groups:
     - {name: Proxy, type: select, rule: ["URLTest","DIRECT",".*"]}
     - {name: URLTest, type: url-test, rule: [".*"], url: https://google.com/generate_204, interval: 300, tolerance: 100, timeout: 3}
 
   rulesets:
-    - {ruleset: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt",group: "DIRECT"}
+    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list",group: "DIRECT"}
+    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list",group: "DIRECT"}
+    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list",group: "DIRECT"}
+    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",group: "DIRECT"}
     - {ruleset: "https://raw.githubusercontent.com/scp3125/subconverter-config/main/direct-list.txt", group: "DIRECT"}
-    # - {ruleset: "[]FINAL", group: "Proxy"}
+    - {ruleset: "[]FINAL", group: "Proxy"}
