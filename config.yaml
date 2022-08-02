@@ -2,8 +2,6 @@ custom:
   enable_rule_generator: true
   overwrite_original_rules: true
 
-  clash_rule_base: base/forcerule.yml
-
   proxy_groups:
     - {name: Proxy, type: select, rule: ["URLTest","DIRECT",".*"]}
     - {name: URLTest, type: url-test, rule: [".*"], url: https://google.com/generate_204, interval: 300, tolerance: 100, timeout: 3}
