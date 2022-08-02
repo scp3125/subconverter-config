@@ -7,6 +7,6 @@ custom:
     - {name: URLTest, type: url-test, rule: [".*"], url: https://google.com/generate_204, interval: 300, tolerance: 100, timeout: 3}
 
   rulesets:
-    - {ruleset: "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt",group: "DIRECT"}
+    - {ruleset: "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt",group: "DIRECT"}
     - {ruleset: "https://raw.githubusercontent.com/scp3125/subconverter-config/main/direct-list.txt", group: "DIRECT"}
     # - {ruleset: "[]FINAL", group: "Proxy"}
