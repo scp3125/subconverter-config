@@ -9,5 +9,7 @@ custom_proxy_group = [
     "URLTest`url-test`.*`https://google.com/generate_204`300,3,100",
 ]
 
+# 生成规则
+enable_rule_generator = true
 # 覆盖原有配置
 overwrite_original_rules = true
