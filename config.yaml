@@ -28,7 +28,7 @@ custom:
         group: "DIRECT",
       }
     - {
-        ruleset: "https://raw.githubusercontent.com/scp3125/subconverter-config/main/ChinaIp.list",
+        ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list",
         group: "DIRECT",
       }
     - {
