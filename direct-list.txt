@@ -3,3 +3,4 @@ DOMAIN-SUFFIX,jizhisy.com
 DOMAIN-SUFFIX,mkh.com
 DOMAIN-SUFFIX,npmmirror.com
 DOMAIN-SUFFIX,zhizhoumi.com
+DOMAIN-SUFFIX,zenithspace.net
