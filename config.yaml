@@ -8,7 +8,7 @@ custom:
         name: URLTest,
         type: url-test,
         rule: [".*"],
-        url: https://google.com/generate_204,
+        url: http://1.1.1.1/generate_204,
         interval: 300,
         tolerance: 100,
         timeout: 3,
